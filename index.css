@@ -1,0 +1,42 @@
+* {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+body {
+    height: 100%;
+    margin: 0;
+}
+
+/* Navigation Bar */
+.navlist {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1.5px;
+    border-style: solid;
+    border-color: rgb(119, 119, 119);
+    border-radius: 6px;
+    margin-top: 4px;
+    margin-left: 10px;
+    margin-right: 10px;
+    overflow: hidden;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    height: 2rem;
+    padding: 10px;
+}
+
+.navitem a {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    font-size: 28px;
+    color: black;
+    font-weight: 500;
+}
+
+#logo {
+    color: red;
+    font-weight: 600;
+    font-family: 'Times New Roman', sans-serif;
+}
