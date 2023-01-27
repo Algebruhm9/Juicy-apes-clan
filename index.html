@@ -7,16 +7,31 @@
     <title>Juicy Apes</title>
     <link rel="stylesheet" href="index.css">
     <script type="text/javascript" src="index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oxygen&family=Righteous&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation -->
     <navbar>
-        <ul class="navlist">
-            <li class="navitem"><a href="./pages/Backstory.html" target="_blank">Backstory</a></li>
+        <ul class="navlist"> <!--A list of how the navbar goes-->
+            <li class="navitem"><a href="./pages/History.html" target="_blank">History</a></li> <!--Always have 2 use target="_blank" so when ppl click, they will be redirected to a separate window -->
             <li class="navitem"><a href="./pages/roster.html" target="_blank">Roster</a></li>
-            <li class="navitem"><a href="index.html" id="logo";> JA</a></li>
-            <li class="navitem"><a href="./pages/socials.html" target="_blank">Social</a></li>
-            <li class="navitem"><a href="./pages/Join.html" target="_blank">Join us</a></li>
+            <li class="navitem"><a href="index.html";> <img id="logo" src="./images/JaLogo.jpg" alt="Ja Logo"></a></li>
+            <li class="navitem"><a href="./pages/socials.html" target="_blank">Social</a></li> 
+            <li class="navitem"> <button id="button"> <a href="./pages/Join.html" target="_blank" id="nth" >Join us</a> </button> </li> <!--Since "navitem" class changes to red when hovering, I need to make a separate ID called "nth" so when hovering, it changes to white to not blend into button background-->
         </ul>
     </navbar>
+    <!-- End Navigation -->
+    <div class="hero">
+        <div id="herowrapper">
+            <div id="herotitle"> Juicy Apes eSports team</div>
+            <div id="herocaption"> The upcoming and rising eSports team started by young teens</div>
+        </div>
+    <img id="mainlogo" src="./images/Mainlogo.png" alt="Juicy Apes logo">
+    </div>
 </body>
 </html>

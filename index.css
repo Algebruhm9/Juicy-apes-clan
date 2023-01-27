@@ -3,14 +3,17 @@
     margin-bottom: 0px;
 }
 body {
+    background-color: rgb(208, 208, 208);
     height: 100%;
     margin: 0;
 }
 
 /* Navigation Bar */
-.navlist {
+.navlist {  /* Parent of navigation bar */
+    background-color: white;
     display: flex;
     flex-wrap: wrap;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .2);
     border: 1.5px;
     border-style: solid;
     border-color: rgb(119, 119, 119);
@@ -19,24 +22,79 @@ body {
     margin-left: 10px;
     margin-right: 10px;
     overflow: hidden;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     list-style-type: none;
-    height: 2rem;
+    height: 3.5rem;
     padding: 10px;
 }
 
-.navitem a {
+.navitem a { /* Children of navlist */
     display: flex;
     flex-wrap: wrap;
     text-decoration: none;
+    font-family: 'Unbounded', 'Times New Roman', sans-serif;
     font-size: 28px;
     color: black;
     font-weight: 500;
 }
 
-#logo {
+.navitem:hover a { /* Special effects when mouse hovers over navitems */
+    transition: 200ms;
+    transform: scale(1.2);
     color: red;
-    font-weight: 600;
-    font-family: 'Times New Roman', sans-serif;
+}
+
+#nth:hover { /* Special properties for "Join us" text like different color when hovering */
+    transition: 200ms;
+    transform: scale(1.0);
+    color: white;
+}
+
+#button {  /* Button for "Join Us" and its effects */
+    background-color: rgb(253, 69, 69);
+    border-style: solid;
+    border-radius: 6px;
+    border-color: black;
+    box-shadow: 5px 10px 10px rgba(0, 0, 0, .2); 
+}
+
+#button:hover {
+    transition: 200ms;
+    transform: scale(1.2);
+}
+
+#logo {  /* Juicy Apes Logo properties */
+    border-radius: 4px;
+    height: 50px;
+    width: 50px;
+}
+/* Navigation bar ends */ 
+
+.hero {
+    background-color: rgb(183, 180, 180);
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#herowrapper {
+    padding: 120px;
+}
+
+#herotitle {
+    width: 500px;
+    font-family: 'Righteous', sans-serif;
+    font-size: 48px;
+}
+
+#herocaption {
+    width: 500px;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 24px;
+}
+
+#mainlogo {
+
+    border-radius: 6px;
 }
