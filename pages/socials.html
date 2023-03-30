@@ -6,11 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Social Media!</title>
     <link rel="stylesheet" href="socials.css">
+    <!-- Links below are used for custom fonts imported! -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oxygen&family=Righteous&display=swap" rel="stylesheet">
+<!-- End custom font links -->
 </head>
-<body>
-    <h1> Socials!</h1>
-    <p> If you'd like to follow us and see what goes on in our day to day life, come check out
-        our social media pages!
-    </p>
+<body> 
+<!--Navigation Bar-->
+    <navbar>
+        <ul class="navlist"> <!--A list of how the navbar goes-->
+            <li class="navitem"><a href="/index.html";> <img id="logo" src="/images/JaLogo.jpg" alt="Ja Logo"></a></li>
+            <li class="navitem"><a href="/pages/roster.html" target="_blank">Roster</a></li> <!--Always have 2 use target="_blank" so when ppl click, they will be redirected to a separate window -->
+            <li class="navitem"><a href="/pages/socials.html" target="_blank">Social</a></li> 
+            <li class="navitem"> <button id="button"> <a href="/pages/Join.html" target="_blank" id="nth" >Join us</a> </button> </li> <!--Since "navitem" class changes to red when hovering, I need to make a separate ID called "nth" so when hovering, it changes to white to not blend into button background-->
+        </ul>
+    </navbar>
+<!--End Navigation Bar-->
+    <!--Start Hero container-->
+<div class="hero">
+    <div id="herowrapper">
+        <div id="herotitle"> Our team's social pages!</div>
+        <div id="herocaption"> Come get a behind the scenes look with our team and what they do when they're
+        not busy gaming or training.
+        </div>
+    </div>
+</div>
+    <!--End Hero container-->
+<div class="social-title">Follow the team</div>
+<ul class="social-container">
+    <div class="social-wrapper">
+        <li class="social-card">algebruh_m8</li>
+        <img src="/images/kevin.jpg">
+    </div>
+    <div class="social-wrapper">
+        <li class="social-card">dening_aa</li>
+        <img src="/images/dening.jpg">
+    </div>
+    <div class="social-wrapper">
+        <li class="social-card">kingpool4208790</li>
+        <img src="/images/paul.jpg">
+    </div>
+</ul>
 </body>
 </html>
