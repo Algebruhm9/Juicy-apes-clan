@@ -8,7 +8,7 @@ body {
     margin: 0;
 }
 
-/* Navigation Bar */
+/* -------Navigation Bar-------- */
 .navlist {  /* Parent of navigation bar */
     background-color: white;
     display: flex;
@@ -62,20 +62,20 @@ body {
     box-shadow: 5px 10px 10px rgba(0, 0, 0, .2); 
 }
 
-#button:hover {
+#button:hover { /* What happens when cursor hovers over the "Join us" button */
     transition: 200ms;
     transform: scale(1.2);
 }
 
 #logo {  /* Juicy Apes Logo properties */
     border: 2px;
-    border-color: rgb(125, 0, 160);
+    border-color: #7d00a0;
     border-style: solid;
     border-radius: 4px;
     height: 50px;
     width: 50px;
 }
-        /* ---Navigation bar ends--- */ 
+        /* ------Navigation bar ends------ */ 
 
 .hero {
     display: flex;
@@ -93,6 +93,12 @@ body {
     width: 500px;
     font-family: 'Righteous', sans-serif;
     font-size: 52px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.loaded #herotitle {
+    opacity: 1;
 }
 
 #herocaption {
@@ -100,20 +106,34 @@ body {
     width: 500px;
     font-family: 'Oxygen', sans-serif;
     font-size: 26px;
+    opacity: 0;
+    transition: opacity 1.8s ease-in-out;
+}
+
+.loaded #herocaption {
+    opacity: 1;
 }
 
 #mainlogo {
     border-radius: 6px;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
 }
 
-.mainbody {
+.loaded #mainlogo {
+    opacity: 1;
+}
+
+ /* ------ Begin main body ------ */
+
+ .mainbody { /* Main div in that section of the website, parent of mainwrapper */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     background-color: white;
 }
 
-.mainwrapper {
+.mainwrapper { /* Wraps main item and main img so header can be on top of the image */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -124,20 +144,20 @@ body {
     text-align: center;
 }
 
-#mainimg {
+#mainimg { /* Properties of adding a border to the main image in that div */
     border: 3px;
     border-radius: 4px;
     border-style: solid;
-    border-color:rgb(125, 0, 160);
+    border-color: #F1BFFF;
 }
 
-#mainp {
+#mainp { /* Main paragraph, is a child of mainbody */
     margin-left: 20px;
     font-size: 20px;
     font-family: 'Oxygen', sans-serif;
 }
 
-.mainbody2 {
+.mainbody2 { /* Copy of first mainbody and so on, required to flip the direction of flex */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -160,7 +180,7 @@ body {
     border: 3px;
     border-radius: 4px;
     border-style: solid;
-    border-color:rgb(125, 0, 160);
+    border-color: #F1BFFF;
 }
 
 #mainp2 {
