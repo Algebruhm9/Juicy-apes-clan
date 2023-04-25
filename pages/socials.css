@@ -3,7 +3,7 @@
     margin-bottom: 0px;
 }
 body {
-    background-color: rgb(65, 90, 119);
+    background-color: rgb(35, 31, 28);
     height: 100%;
     margin: 0;
 /* -------Navigation Bar-------- */
@@ -131,6 +131,7 @@ body {
 
 .social-wrapper {
     margin-top: 20px;
+    margin-bottom: 20px;
     background-image: linear-gradient(to bottom right, rgb(255, 112, 112), rgb(139, 139, 255));
     border-style: solid;
     border-radius: 4px;
@@ -158,4 +159,11 @@ body {
     transition: 200ms;
     transform: scale(1.2);
     color: rgb(251, 227, 248);
+}
+
+.footer {
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
 }
