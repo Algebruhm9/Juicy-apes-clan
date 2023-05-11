@@ -164,7 +164,7 @@ body {
     background-color: white;
 }
 
-.mainwrapper2 {
+.mainwrapper2 { /* Same goes for this container, will be used to mirror the contents of the page */
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
